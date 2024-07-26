@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #748D92;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #D3D9D4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navigation Bar */
+        .navigations ul {
+            list-style: none;
+            background: rgb(214, 125, 8);
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navigations li {
+            display: inline-block;
+        }
+
+        .navigations a {
+            text-decoration: none;
+            color: #fff;
+            width: 120px;
+            display: block;
+            padding: 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navigations a:hover {
+            background: #0056b3;
+            color: #fff;
+        }
+
+        /* Content Container */
+        .container {
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            background: #3D2B1F;
+            border-radius: 10px;
+            margin-top: 20px;
+            color: #D3D9D4;
+        }
+
+        h1 {
+            color: #00FFFF;
+            background-color: #3D2B1F;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #FFD700;
+            margin: 20px 0;
+        }
+
+        h3 {
+            color: #D3D9D4;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #D3D9D4;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #D3D9D4;
+            background: #3D2B1F;
+            color: #D3D9D4;
+        }
+
+        button {
+            background: rgb(214, 125, 8);
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        /* Social Media Links */
+        .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-links a {
+            color: #D3D9D4;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #FFD700;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navigations a {
+                width: 100px;
+                padding: 10px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="navigations">
+        <ul>
+            <li><a href="./homepage.html">Home</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./Certificates.html">Certificates</a></li>
+            <li><a href="./Services.html">Services</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Contact Me</h1>
+        <hr>
+        <p>If you have any questions or would like to get in touch, please fill out the form below:</p>
+
+        <form action="mailto:charles.jordan.condez@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://www.facebook.com/cjcondez23" target="_blank" class="fab fa-facebook-f" title="Facebook"></a>
+            <a href="https://twitter.com/cjvlogs23" target="_blank" class="fab fa-twitter" title="Twitter"></a>
+            <a href="https://www.instagram.com/cjvlogs23/" target="_blank" class="fab fa-instagram" title="Instagram"></a>
+            <a href="https://www.linkedin.com/in/cjvlogs23/" target="_blank" class="fab fa-linkedin-in" title="LinkedIn"></a>
+        </div>
+    </div>
+</body>
+
+</html>

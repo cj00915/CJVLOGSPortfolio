@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #748D92;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #D3D9D4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navigation Bar */
+        .navigations ul {
+            list-style: none;
+            background: rgb(214, 125, 8);
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navigations li {
+            display: inline-block;
+        }
+
+        .navigations a {
+            text-decoration: none;
+            color: #fff;
+            width: 120px;
+            display: block;
+            padding: 15px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navigations a:hover {
+            background: #0056b3;
+            color: #fff;
+        }
+
+        /* Content Styling */
+        h1 {
+            color: #00FFFF;
+            background-color: #3D2B1F;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #D3D9D4;
+            margin: 20px 0;
+        }
+
+        h3 {
+            color: #FFD700;
+            margin: 10px 0;
+        }
+
+        .img-container {
+            width: 90%;
+            max-width: 600px; /* Adjust this to your preferred maximum width */
+            height: auto;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #D3D9D4;
+            margin: 20px 0;
+            width: 80%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navigations a {
+                padding: 10px;
+                width: auto;
+            }
+
+            .img-container {
+                width: 100%;
+                max-width: 90%; /* Ensures images are responsive */
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigations">
+        <ul>
+            <li><a href="./homepage.html">Home</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./Certificates.html">Certificates</a></li>
+            <li><a href="./Services.html">Services</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <h1>Certificates</h1>
+    
+    <h2>Social Media Management</h2>
+    <h3>Pro VA Social Media Management Certificate</h3>
+    <div class="img-container">
+        <img src="./ProVA SMM Certificate.png" alt="Pro VA Certificate"/>
+    </div>
+    <hr>
+    
+    <h3>Kurso PH Social Media Management Certificate</h3>
+    <div class="img-container">
+        <img src="./Kurso PH Certificate.png" alt="Kurso PH Certificate"/>
+    </div>
+</body>
+
+</html>
