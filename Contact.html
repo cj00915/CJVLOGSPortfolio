@@ -97,7 +97,8 @@
             font-weight: bold;
         }
 
-        input, textarea {
+        input,
+        textarea {
             padding: 10px;
             border-radius: 5px;
             border: 1px solid #D3D9D4;
@@ -175,15 +176,15 @@
         <hr>
         <p>If you have any questions or would like to get in touch, please fill out the form below:</p>
 
-        <form action="mailto:charlesjordancondez@gmail.com" method="post" enctype="text/plain">
+        <form id="contactForm" onsubmit="sendEmail(event)">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="user_name" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="user_email" required>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" name="user_message" rows="5" required></textarea>
 
             <button type="submit">Send</button>
         </form>
@@ -196,6 +197,28 @@
             <a href="https://www.linkedin.com/in/cjvlogs23/" target="_blank" class="fab fa-linkedin-in" title="LinkedIn"></a>
         </div>
     </div>
+
+    <!-- EmailJS CDN -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function() {
+        emailjs.init("7qfMU9C0wQl0abnky"); // Replace with your EmailJS user ID
+      })();
+      
+      function sendEmail(event) {
+        event.preventDefault(); // Prevent default form submission
+        
+        const form = event.target;
+        
+        emailjs.sendForm('service_dqlwd9g', 'template_39canqr', form)
+          .then(function(response) {
+            alert('Your message has been sent successfully!');
+          }, function(error) {
+            alert('There was a problem sending your message.');
+            console.error('Failed to send email:', error);
+          });
+      }
+    </script>
 </body>
 
 </html>
